@@ -7,13 +7,6 @@
 
 A Streamlit web app that predicts **yearly medical insurance charges** from a person's profile (age, sex, BMI, children, smoker status, region) and compares the result with a reference average.
 
-## 🎬 Demo
-
-![App screenshot](screenshot.png)
-
-<!-- Once deployed, add the link here: -->
-<!-- **Live app:** https://your-app-name.streamlit.app -->
-
 ## ✨ Features
 
 - 🎛️ Interactive sidebar form with sliders and dropdowns
