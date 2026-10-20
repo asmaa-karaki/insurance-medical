@@ -1,0 +1,73 @@
+# Insurance Cost Estimator
+
+A Streamlit web app that predicts yearly medical insurance charges from a person's profile (age, sex, BMI, children, smoker status, region) and compares the result with a reference average.
+
+> Replace the placeholders in `[brackets]` with your own information.
+
+## Demo
+
+![App screenshot](screenshot.png)
+
+<!-- Optional: add a live link once deployed -->
+<!-- **Live app:** https://your-app-name.streamlit.app -->
+
+## Features
+
+- Interactive form with sliders and dropdowns
+- Instant cost prediction from a trained machine learning model
+- Visual comparison with the average smoker / non-smoker cost
+- Summary of the profile used for the estimate
+
+## Tech stack
+
+- Python 3.10+
+- Streamlit
+- scikit-learn / joblib
+- pandas, NumPy
+
+## Project structure
+
+```
+.
+├── app.py                  # Streamlit app
+├── insurance_model.pkl     # Trained model
+├── model_features.pkl      # Feature columns expected by the model
+├── requirements.txt
+└── README.md
+```
+
+## Run locally
+
+```bash
+# 1. Clone the repository
+git clone https://github.com/[your-username]/[your-repo].git
+cd [your-repo]
+
+# 2. (Optional) create a virtual environment
+python -m venv venv
+source venv/bin/activate        # Windows: venv\Scripts\activate
+
+# 3. Install dependencies
+pip install -r requirements.txt
+
+# 4. Start the app
+streamlit run app.py
+```
+
+The app opens at http://localhost:8501.
+
+## Model
+
+- **Target:** insurance charges (the model is trained on `log1p(charges)`, so predictions are converted back with `expm1`)
+- **Inputs:** age, sex, BMI (plus BMI category), number of children, smoker, region
+- **Dataset:** [add the source, e.g. the Kaggle "Medical Cost Personal Datasets"]
+- **Algorithm:** [e.g. Random Forest / Gradient Boosting]
+- **Performance:** [e.g. R² = 0.87 on the test set]
+
+## Disclaimer
+
+The average costs shown in the app are illustrative reference values. This tool is for learning purposes and does not provide a personalised insurance quote.
+
+## Author
+
+[Your name] – [GitHub profile or LinkedIn link]
