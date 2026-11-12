@@ -1,4 +1,4 @@
-# 💙 Insurance Cost Estimator
+# Insurance Cost Estimator
 
 ![Python](https://img.shields.io/badge/Python-3.10%2B-3776AB?logo=python&logoColor=white)
 ![Streamlit](https://img.shields.io/badge/Streamlit-App-FF4B4B?logo=streamlit&logoColor=white)
